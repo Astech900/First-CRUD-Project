@@ -1,0 +1,29 @@
+.posts{
+    /* height: 10%; */
+    width: 50%;
+    background-color: teal;
+    color: #fff;
+    margin-left: 2rem;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+.posts div{
+ 
+    margin-top:1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.posts div a {
+  
+}
+
+#repost{
+     padding: 0.6rem 1.1rem;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}

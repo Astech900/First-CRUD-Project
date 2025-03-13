@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single pages</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="posts">
+        <h3>id<%= user.id %></h3>
+        <p>Username: <%= user.username %></p>
+        <span>Your Post: <%= user.content %> </span>
+        <br>
+        <div>
+            <a href="/posts" id="repost">Post new thing!</a>
+            <a href="/posts/edit/<%= user.id  %>" id="repost">Edit post</a>
+            <a href="/display" id="repost">Go Back</a>
+        </div>
+    </div>
+    
+</body>
+</html>

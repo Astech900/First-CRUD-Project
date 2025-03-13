@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit your post</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="posts">
+        <h3>id<%= user.id %></h3>
+        <p>Username: <%= user.username %></p>
+        
+        <form method="post" action="/posts/edit/<%= user.id %>?_method=PATCH">
+            <textarea name="content" rows="10" cols="20" id="" placeholder="What is happening?"><%= user.content %></textarea>
+            <button id="repost" >Edited</button>
+        </form>
+        <br>
+        <div>
+            <a href="/posts" id="repost">Post new thing!</a>
+            <a href="/display" id="repost">Go Back</a>
+        </div>
+    </div>
+    
+</body>
+</html>
